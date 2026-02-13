@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - A Tribute to the Greatest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://people.com/thmb/60G4SLE0vvlrmo6TqpeNR5SNHks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x438:1001x440)/lionel-messi-most-liked-instagram-picute-122222-2e46f8ce2f8444948fce28f2c84c72f2.jpg') center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffd700;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            color: #ffd700;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #e0e0e0;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            text-align: center;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin: 40px 0 20px;
+            color: #ffd700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #ffd700;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #d0d0d0;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .achievement-card {
+            background: linear-gradient(135deg, #2a2a40 0%, #1a1a2e 100%);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .achievement-card h3 {
+            color: #ffd700;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .achievement-card p {
+            color: #b0b0b0;
+            font-size: 1em;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #1a1a2e;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.4em;
+            font-style: italic;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 3em;
+            color: rgba(0, 0, 0, 0.2);
+        }
+
+        .quote::after {
+            content: '"';
+            font-size: 3em;
+            color: rgba(0, 0, 0, 0.2);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #ffd700;
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            color: #b0b0b0;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #0a0a0f;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 3px solid #ffd700;
+        }
+
+        footer p {
+            color: #808080;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .quote {
+                font-size: 1.1em;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lionel Messi</h1>
+        <p class="subtitle">The Greatest Footballer of All Time</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>
+                Lionel Andrés Messi, a name that resonates with excellence, dedication, and pure magic on the football pitch. 
+                From the streets of Rosario, Argentina, to conquering the world's biggest stages, Messi's journey is nothing 
+                short of extraordinary. His vision, dribbling, and ability to make the impossible look effortless have made 
+                him a legend in every sense of the word.
+            </p>
+        </div>
+
+        <h2>Why We Admire the Maestro</h2>
+        
+        <div class="section">
+            <p>
+                What makes Messi truly special isn't just his unparalleled skill with the ball at his feet, but his humility, 
+                perseverance, and unwavering dedication to the beautiful game. Despite facing growth hormone deficiency as a 
+                child, he never gave up on his dream. His left foot has painted masterpieces on football fields across the 
+                globe, bringing joy to millions.
+            </p>
+            <p>
+                Messi's playing style is a blend of artistry and efficiency. He glides past defenders as if they're not there, 
+                finding spaces that don't exist, creating chances out of nothing. His low center of gravity, quick acceleration, 
+                and close ball control make him virtually impossible to dispossess. But beyond the statistics and trophies, it's 
+                his passion for the game that truly inspires.
+            </p>
+            <p>
+                In 2022, Messi achieved his lifelong dream of winning the FIFA World Cup with Argentina, cementing his legacy 
+                as the complete footballer. The image of him lifting the trophy in Qatar will forever be etched in football 
+                history. His leadership, crucial goals, and performances throughout the tournament showcased why he's considered 
+                the greatest to ever play the game.
+            </p>
+        </div>
+
+        <div class="quote">
+            I start early and I stay late, day after day, year after year. It took me 17 years and 114 days to become an overnight success.
+        </div>
+
+        <h2>Career Highlights</h2>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Ballon d'Or Awards</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">World Cup</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">800+</div>
+                <div class="stat-label">Career Goals</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">Major Trophies</div>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <div class="achievement-card">
+                <h3>🏆</h3>
+                <p><strong>FIFA World Cup Winner</strong><br>Qatar 2022</p>
+            </div>
+            <div class="achievement-card">
+                <h3>⚽</h3>
+                <p><strong>8x Ballon d'Or</strong><br>Most in history</p>
+            </div>
+            <div class="achievement-card">
+                <h3>🥇</h3>
+                <p><strong>Olympic Gold Medal</strong><br>Beijing 2008</p>
+            </div>
+            <div class="achievement-card">
+                <h3>👑</h3>
+                <p><strong>Copa América Winner</strong><br>2021 & 2024</p>
+            </div>
+            <div class="achievement-card">
+                <h3>🌟</h3>
+                <p><strong>4x Champions League</strong><br>With FC Barcelona</p>
+            </div>
+            <div class="achievement-card">
+                <h3>🔟</h3>
+                <p><strong>La Liga Top Scorer</strong><br>8 times</p>
+            </div>
+        </div>
+
+        <h2>The Journey</h2>
+
+        <div class="section">
+            <p>
+                <strong>Early Years (1987-2000):</strong> Born in Rosario, Argentina, Messi's talent was evident from a young age. 
+                He joined Newell's Old Boys youth academy and dominated despite his small stature. His growth hormone deficiency 
+                threatened his career, but Barcelona saw his potential and offered to pay for his treatment, bringing him to Spain at age 13.
+            </p>
+            <p>
+                <strong>Barcelona Era (2004-2021):</strong> Messi's time at Barcelona was nothing short of legendary. He scored 672 goals 
+                in 778 appearances, won 35 trophies, and formed part of the greatest team in football history alongside Xavi and Iniesta. 
+                His six-goal performance against Arsenal, the solo goal against Getafe reminiscent of Maradona, and countless El Clásico 
+                masterclasses became the stuff of legend.
+            </p>
+            <p>
+                <strong>PSG and Inter Miami (2021-Present):</strong> After an emotional departure from Barcelona, Messi joined PSG, 
+                winning Ligue 1 and continuing to perform at the highest level. In 2023, he moved to Inter Miami in MLS, where he's 
+                continued to showcase his brilliance, leading the team to their first-ever trophy, the Leagues Cup.
+            </p>
+        </div>
+
+        <h2>Memorable Moments</h2>
+
+        <div class="image-gallery">
+            <img src="https://barcauniversal.com/wp-content/uploads/2021/06/28165987-scaled.jpg" alt="Football action">
+            <img src="https://digitalhub.fifa.com/transform/057b508f-a50b-4a14-91e9-fc1bf5f443b5/Argentina-v-France-Final-FIFA-World-Cup-Qatar-2022" alt="Celebrating victory">
+            <img src="https://www.fcbarcelona.com/photo-resources/2019/12/02/45bdaace-52ae-481a-a0c2-88efa1f17bdc/mini__R5I4403.JPG?width=1200&height=750" alt="Ballon Dor">
+        </div>
+
+        <div class="section">
+            <h2 style="text-align: left; font-size: 1.8em; margin-top: 0;">Beyond Football</h2>
+            <p>
+                Off the pitch, Messi is a devoted family man, a UNICEF ambassador, and runs his own charitable foundation supporting 
+                access to education and healthcare for vulnerable children. His humility and down-to-earth personality, despite being 
+                one of the most famous people on the planet, make him even more admirable.
+            </p>
+            <p>
+                Messi's legacy extends beyond the trophies and records. He's inspired a generation of footballers and fans worldwide. 
+                He's shown that with talent, hard work, and determination, you can overcome any obstacle. He's proven that you don't 
+                need to be the loudest or most flamboyant to be the greatest—you just need to let your feet do the talking.
+            </p>
+        </div>
+
+        <div class="quote">
+            You have to fight to reach your dream. You have to sacrifice and work hard for it.
+        </div>
+    </div>
+
+    <footer>
+        <p>A tribute to Lionel Messi - Created with admiration and respect</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Thank you for inspiring millions around the world 🐐</p>
+    </footer>
+</body>
+</html>
